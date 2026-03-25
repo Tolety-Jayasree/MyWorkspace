@@ -1,0 +1,275 @@
+Tutorial : Structured Query Language(SQL)
+
+Database is a collection of data in a format that can be easily accessed. 
+A software application used to manage our DB is called Database Management System(DBMS)
+
+TYPES OF DATABASES:
+1) Relational Database(RDBMS) : Data is stored in tables like MySQL and PostgreSQL.
+2) Non-relational databse(NoSQL): Data is not stored in tables like mongoDB.
+
+SQL: Used to interact with relational databases.
+Operation: CRUD
+Create
+Read
+Update
+Delete
+
+CREATE A DATABASE:
+CREATE DATABASE db_name;(throws an error if we try to create an already existing database)
+CREATE DATABASE IF NOT EXISTS db_name;(throws a warning if we try to create an already existing database)
+
+DELETE A DATABASE:
+DROP DATABASE db_name;(it throws error if we are trying to delete a database that doesn't exits)
+DROP DATABASE IF EXISTS db_name;(this throws a warning)
+
+USE THE DATABASE:
+USE db_name;
+
+SHOW DATABASES;
+SHOW TABLES;
+
+CREATING A TABLE:
+CREATE TABLE table_name(column_name1 datatype constraint,
+column_name2 datatype constraint,
+column_name3 datatype constraint);
+Ex: CREATE TABLE student(id INT PRIMARY KEY,
+name VARCHAR(50),
+age INT NOT NULL
+);
+
+INSERT DATA INTO THE TABLE:
+INSERT INTO table_name VALUES(value1,value2,value3.............);
+INSERT INTO student VALUES(1,"Jaya Sree",27);
+
+To fetch the data from table:
+SELECT col1,col2.... FROM table_name;
+SELECT * FROM table_name;
+
+TYPES OF SQL COMMANDS:
+DDL - Data Defination Language : create,alter,rename,truncate and drop
+DQL - Data Query Language - select
+DML - Data Manipulation Language - insert,update and delete
+DCL - Data Control Language - grant and revoke permission to users 
+TCL - Transaction Control Language - start transaction,commit,rollback
+
+KEYS:
+PRIMARY KEY: It is a column/combination of columns that uniquely identifies each row. 
+Ex: EMP_ID in Employee table
+CREATE TABLE student(
+    id int,
+    name varchar(50),
+    age int,
+    city varchar(20),
+    PRIMARY KEY(id,name) -> here id and name may contain duplicate/null values but the combination should be UNIQUE/NOT NULL
+);
+
+FOREIGN KEY: It is a column in a table that refers to the primary key of another table. 
+There can be muliple FK's. FK's can have duplicate and null values. 
+Ex: A student table consisting of ID(Primary key),name,city_id(Foreign key) and city_name. Here mutiple students can come from the same city so the foreign key can have duplicate values.
+Another table consisting of city_id(Primary key) and city_name
+
+HOW TO LINK FOREIGN KEY IN BETWEEN THE TABLES?
+CREATE TABLE customer(
+    cust_id int,
+    FOREIGN KEY (cust_id) references customer(id)
+);
+
+SQL Constarints: used to specify the rules for the data in a table. 
+UNIQUE
+NOT NULL
+PRIMARY KEY
+
+DEFAULT - sets the values of a column to a default value 
+Ex: salary INT DEFAULT 25000
+
+CHECK - checks the condition when the values are being added to the tables.
+Ex: CREATE TABLE check(
+age int CHECK (age>=18)
+);
+
+DISTINCT - Used to retreive unique values in a column.
+Ex: SELECT DISTINCT col1 FROM table_name; - fetches all the distinct values of col1 and returns
+
+WHERE clause: USed to define some conditions
+SELECT col1,col2 FROM table_name WHERE conditions;
+Ex: SELECT * from student where age>=18;
+
+OPERATORS:
+AND : To check both conditions
+Ex: SELECT * FROM student WHERE marks>80 AND city="Warangal";
+OR : To check for one of the conditions to be true 
+Ex: SELECT * FROM student WHERE marks>80 OR city="Warangal";
+BETWEEN - selects for a given range
+Ex: SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
+IN - matches any value in the list
+Ex: SELECT * FROM student WHERE city IN ("Warangal","Hyderabad");
+NOT - to negate the given condition
+Ex: SELECT * FROM student WHERE city NOT IN ("Warangal","Hyderabad");
+
+LIMIT CLAUSE: Sets an upper limit on the number of rows being returned 
+SELECT col1,col2 FROM table_name LIMIT number;
+Ex: SELECT * FROM student LIMIT 3;
+
+ORDER BY CLAUSE: To sort in ascending(ASC) or descending order(DESC)
+SELECT col1,col2 FROM table_name ORDER BY col(s) ASC;
+Ex: SELECT * FROM student ORDER BY city ASC;
+
+AGGREGATE FUNCTIONS: Aggregate functions perform calculations on a set of values and return a single value.
+SUM() - SELECT SUM(marks) from student;
+AVG() - SELECT AVG(marks) from student;
+MIN() - SELECT MIN(marks) from student;
+MAX() - SELECT MAX(marks) from student;
+COUNT() - SELECT COUNT(name) from student;
+
+GROUP BY CLAUSE: Group the rows together that have the same value. Generally this clause is used along with an aggregate function. 
+Ex: Count the number of students in each city
+SELECT city,COUNT(name) FROM student GROUP BY city; (As we are performing group by on city it should definitely be used in select)
+
+
+PRACTICE QUESTIONS:
+Write a query to find average marks in each city in asceneding order.
+SELECT city,AVG(marks) from student GROUP BY city ORDER BY AVG(marks) ASC;
+For the given table find the total number of payments according to each payment method. 
+SELECT mode,COUNT(customer) from payment GROUP BY mode;
+
+HAVING CLAUSE: This is similar to WHERE clause which is used to impose some condition on the rows. 
+This is used when we want to apply some condition after GROUPING. 
+Ex: Count the number of students in each city where max marks cross 90.
+SELECT city,COUNT(name) from student GROUP BY city HAVING max(marks)>90;
+
+WHY DO WE USE "HAVING" CLAUSE INSTEAD OF "WHERE" CLAUSE WHILE USING "GROUP BY"?
+Because "WHERE" clause filters the rows even before grouping them. So in order to impose conditions on rows after grouping we use "HAVING" clause.
+
+GENERAL ORDER:
+SELECT col(s)
+FROM table_name
+WHERE condition
+GROUP BY col(s)
+HAVING condition
+ORDER BY col(s) ASC;
+Ex: SELECT city
+FROM student
+WHERE grade="A"
+GROUP BY city
+HAVING max(marks)>90
+ORDER BY city ASC;
+
+UPDATE COMMAND: Used to update the existing rows.
+UPDATE table_name SET col1=val1,col2=val2 WHERE condition;
+Ex: UPDATE student SET grade="O" WHERE grade="A"
+
+DELETE COMMAND: Used to delete the existing rows.
+DELETE FROM table_name WHERE condition;
+Ex: DELETE FROM student WHERE marks<33;
+DELETE FROM student;(This deleted the entire table)
+
+WHAT IS THE DIFFERENCE BETWEEN DELETE AND DROP?
+DELETE: Used to delete the rows of a table/table itself. This operation can be roll-backed.
+DROP: this is used to permanently delete all the tables and cannot be roll-backed.
+TRUNCATE: Deletes only the data of the table. 
+
+CASCADING FOR FOREIGN-KEYS:
+ON-DELETE CASCADE:
+When we create any foreign key using this option if there are any changes in the primary key of the parent table like deletion then the respective changes are made in the child(table containg FK) as well. 
+ON-UPDATE CASCADE:
+When we create any foreign key using this option, if there are any changes in the primary key of the parent table like updation then the respective changes are made in the child(table containg FK) as well. 
+Ex: CREATE TABLE student(
+    id INT PRIMARY KEY,
+    courseID INT,
+    FOREIGN KEY(courseID) references course(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+);
+
+ALTER COMMAND: To change the schema(columns,datatype,constraints)
+ADD COLUMN:
+ALTER TABLE table_name ADD COLUMN column_name datatype constraint;
+DROP COLUMN:
+ALTER TABLE table_name DROP COLUMN column_name;
+RENAME TABLE:
+ALTER TABLE table_name RENAME TO new_table_name;
+CHANGE COLUMN:
+ALTER TABLE table_name CHANGE COLUMN old_name new_name new_datatype new_constraint;
+MODIFY COLUMN: Used to modify the datatype/constraint
+ALTER TABLE table_name MODIFY COLUMN old_name new_name new_datatype new_constraint;
+
+TRUNCATE COMMAND: To delete table's data
+TRUNCATE table table_name;
+
+PRACTICE QUESTION:
+In the student table:
+a. Change the name of column from "name" to "full_name"
+ALTER TABLE student CHANGE COLUMN name full_name VARCHAR(50);
+b. Delete all the students who scored marks less than 80
+DELETE FROM student WHERE marks<80;
+c. Delete the column grade
+ALTER TABLE student DROP COLUMN grade;
+
+JOINS: Joins are used to combine rows from two or more tables based on the common column between them. 
+TYPES OF JOINS:
+1) INNER JOIN(intersection of A and B) : Returns records that have matching values in BOTH the tables.
+SELECT col(s) FROM tableA INNER JOIN tableB ON tableA.col_name=tableB.col_name;
+SELECT col(s) FROM tableA as a INNER JOIN tableB as b ON a.col_name=b.col_name; (Using alias)
+Outer Joins:
+2) LEFT JOIN(complete A): Returns all the records from left table and matched records from right table.
+SELECT col(s) FROM tableA LEFT JOIN tableB ON tableA.col_name=tableB.col_name;
+3) RIGHT JOIN(complete B) : Returns all the records from right table and matched records from left table.
+SELECT col(s) FROM tableA RIGHT JOIN tableB ON tableA.col_name=tableB.col_name;
+4) FULL JOIN(union of A and B) : Return all the records from left and right tables.
+LEFT JOIN UNION RIGHT JOIN
+SELECT col(s) FROM tableA LEFT JOIN tableB ON tableA.col_name=tableB.col_name
+UNION
+SELECT col(s) FROM tableA RIGHT JOIN tableB ON tableA.col_name=tableB.col_name;
+5) LEFT EXCLUSIVE JOIN(only A):
+SELECT col(s) FROM tableA LEFT JOIN tableB ON tableA.col_name=tableB.col_name where tableB.col_name IS NULL;
+6) RIGHT EXCLUSIVE JOIN(only B):
+SELECT col(s) FROM tableA RIGHT JOIN tableB ON tableA.col_name=tableB.col_name where tableA.col_name IS NULL;
+7) FULL EXCLUSIVE JOIN(union of a and b without their intersection):
+LEFT EXCLUSIVE JOIN
+UNION
+RIGHT EXCLUSIVE JOIN
+SELECT col(s) FROM tableA LEFT JOIN tableB ON tableA.col_name=tableB.col_name where tableB.col_name IS NULL
+UNION
+SELECT col(s) FROM tableA RIGHT JOIN tableB ON tableA.col_name=tableB.col_name where tableA.col_name IS NULL;
+8) SELF-JOIN: It is a inner jooin but it is joined with itself.
+This is used when a single table holds the Hierarchical information( like managers in a organization).
+We can use self join to retreive the employee name and their manager.
+SELECT col(s) FROM table as a JOIN table as b ON a.col_name=b.col_name;
+
+UNION COMMAND: Used to combine the result of two or more SELECT statements. It gives UNIQUE records.
+CONDITIONS: 
+1) Every select statement should have the same number of columns.
+2) Columns must have similar data types.
+3) Columns in every select should be in the same order.
+SELECT col(s) FROM TABLEA
+UNION
+SELECT col(s) FROM TABLEB
+UNION ALL COMMAND: Gives the duplicate values as well.
+
+SQL SUB-QUERIES: A sub-query/inner/nested query inside another query. 
+Generally used within:
+1) SELECT
+2) FROM
+3) WHERE 
+SELECT col(s) from table_name where col_name operator (subquery);
+Ex: Get names of all students who scored more than class average. 
+1) Find the average of the class
+2) Find the names of students with marks>avg
+SELECT name, marks FROM student where marks>(SELECT AVG(marks) from student);
+
+Ex: Find the names of all students with even roll numbers.
+1) Find the even roll numbers
+2) Find the names of students with even roll numbers
+SELECT name, rollno FROM student where rollno IN (SELECT rollno from student where rollno%2=0);
+
+Ex: Find the max marks from the students of Delhi
+1) Find the students of Delhi
+2) Find their max marks using the sublist in step1
+SELECT MAX(marks) FROM (SELECT * from student WHERE city = "Delhi"); (Using SUB-QUERIES)
+SELECT MAX(marks) FROM student where city="Delhi"; (USING NORMAL QUERY)
+
+MySQL VIEWS: View is a virtual(temporary) tables created from the original tables so as to view a specific content. 
+It always shows up-to-date data as the database-engine recreates the view everytime the user queries it.
+CREATE VIEW view1 as SELECT name,rollno FROM student;
+SELECT * FROM view1;
+DROP VIEW view1;
