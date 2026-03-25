@@ -1,0 +1,67 @@
+Tutorial : Git and Github
+Version Control System is a tool that helps us to track the changes in the code. 
+Ex: Bank Mini statement.
+GIT is a version control system. It is used to track the history and collaborate. 
+GITHUB is a website that allow developers to store and manage their code using GIT(https://github.com)
+
+CLONE : Cloning a repository on our local machine
+git clone <link>
+
+STATUS : Display the status of the code
+git status
+
+UNTRACKED : Files that git doesn't track yet. Files that are basically not committed yet(New files)
+MODIFIED : Files to which changes are made
+STAGED : File is ready to be committed(changes made + Added)
+UNMODIFIED : Unchanged files(committed files)
+ADD(+) : adds new/changed files of the working directory to the GIT staging area
+git add <file_name>
+git add . (To add all the files)
+COMMIT : It is the record of change
+git commit -m "Some message"
+
+PUSH : Upload local repo content to remote repo
+git push origin main (origin referes to the copy of Github repo and main is the branch inside it)
+
+init - Used to create a new repo
+git init
+git remote add origin <link> (add the repo in github and copy the link here)
+git remote -v (to verify remote)
+git push -u origin main( By using -u we declare that everytime the changes has to be pushed to origin main and from next time we can simply use git push)
+
+Workflow : 
+Create a Github repo -> clone it -> make changes -> add -> commit -> push
+
+GIT BRANCHES:
+git branch (to check branches)
+git branch -M main (to rename branch)
+git checkout <branch_name> - To navigate between branches
+git checkout -b <new_branch_name> - To create new branch
+git branch -d <branch_name> - To delete branch(We cannot delete the branch being in it. Need to switch to another branch)
+
+Merge code:
+Way 1:
+git diff <branch_name> ( to compare commits,branches,files and more)
+git merge <branch-name> (to merge the 2 branches)
+
+Way 2: Create a PR
+
+PR(Pull Request) : It tells about the changes that we have pushed to the branch in the repository on github
+PULL : used to fetch and download content from remote repo and immediately update the local repo to match that content
+git pull origin main
+
+Resolving Merge conflicts: 
+Conflicts occur when changes are being done in the same file in two different branches and committed.
+
+Undoing changes:
+Case 1 : Staged changes (Added but not committed)
+git reset <file-name>
+git reset (incase of all files)
+
+Case 2 : Committed changes(for one commit)
+git reset HEAD~1
+
+Case 3 : Committed changes(for many commits)
+git reset <commit-hash> - for reverting back to multiple commits 
+git reset --hard <commit-hash> # Once it is reverted the changes will be in modified changes, to even remove that use --hard
+
