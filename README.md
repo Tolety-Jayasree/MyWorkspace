@@ -46,11 +46,11 @@
 
 ### 🤖 Generative AI & LLMs
 <p>
-<img src="https://img.shields.io/badge/-000000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/LLM-000000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/RAG-FF6F61?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge"/> 
 <img src="https://img.shields.io/badge/LangGraph-8A2BE2?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Vector%20DBs-FF1493?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Agentic AI-FF1493?style=for-the-badge"/>
 </p>
 
 ### 📊 Data & Visualization
