@@ -1,12 +1,7 @@
-# 👋 Hi, I'm Nikunj Mishra  
+# 👋 Hi, I'm Jaya Sree Tolety  
 ✨ AI/ML Engineer | Generative AI & LLM Specialist ✨  
 <p align="center">
-
-<img src="https://img.shields.io/badge/AI%2FML-Engineer-0A66C2?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Generative-AI-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" />
-<img src="https://img.shields.io/badge/LLMs-RAG-FF6F61?style=for-the-badge&logo=chainlink&logoColor=white" />
-<img src="https://img.shields.io/badge/Computer-Vision-00C853?style=for-the-badge&logo=opencv&logoColor=white" />
-
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00F7FF&center=true&vCenter=true&width=800&lines=AI%2FML+Engineer;Generative+AI+%7C+LLMs+%7C+RAG+Specialist;Computer+Vision+Engineer;Building+Production-Grade+AI+Systems" />
 </p>
 ---
 
