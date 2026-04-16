@@ -3,7 +3,6 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00F7FF&center=true&vCenter=true&width=800&lines=AI%2FML+Engineer;Generative+AI+%7C+LLMs+%7C+RAG+Specialist;Computer+Vision+Engineer;Building+Production-Grade+AI+Systems" />
 </p>
----
 
 ## 💫 About Me
 🚀 AI/ML Engineer focused on **Generative AI, LLMs, and production-grade ML systems**  
