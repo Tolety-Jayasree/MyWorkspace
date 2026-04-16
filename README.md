@@ -1,11 +1,33 @@
 # 👋 Hi, I'm Jaya Sree Tolety  
 
-# 👋 Hi, I'm Nikunj Mishra  
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00F7FF&center=true&vCenter=true&width=700&lines=AI%2FML+Engineer;Generative+AI+%7C+LLMs+%7C+RAG+Specialist;Computer+Vision+Developer;Building+Production+Grade+AI+Systems" />
 </p>
 ## ✨ AI/ML Engineer | Generative AI & LLM Specialist ✨  
+
+# 👋 Hi, I'm Nikunj Mishra  
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00F7FF&center=true&vCenter=true&width=750&lines=AI%2FML+Engineer;Generative+AI+%7C+LLMs+%7C+RAG+Specialist;Computer+Vision+Developer;Building+Production+Grade+AI+Systems" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI%2FML-Engineer-00C2FF?style=for-the-badge&logo=ai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Generative-AI-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/LLMs-%26%20RAG-FF6F61?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/Computer-Vision-00FF7F?style=for-the-badge&logo=opencv&logoColor=black" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-SpringBoot-FF7800?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vector-DBs-FF1493?style=for-the-badge&logo=databricks&logoColor=white" />
+</p>
+
+---
+
+## 🚀 AI/ML Engineer | Generative AI & LLM Specialist | Data Scientist  
 
 ---
 
