@@ -1,100 +1,116 @@
-# 👋 Hi, I'm Jaya Sree Tolety  
+# 👋 Hi, I'm Nikunj Mishra  
+✨ AI/ML Engineer | Generative AI & LLM Specialist ✨  
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00F7FF&center=true&vCenter=true&width=800&lines=AI%2FML+Engineer;Generative+AI+%7C+LLMs+%7C+RAG+Specialist;Computer+Vision+Engineer;Building+Production-Grade+AI+Systems" />
+---
+
+## 💫 About Me
+🚀 AI/ML Engineer focused on **Generative AI, LLMs, and production-grade ML systems**  
+🧩 I build end-to-end AI solutions: **data → embeddings → retrieval → LLM → deployment**  
+🧠 Strong interest in **RAG architectures, Multimodal AI, and scalable AI systems**  
+📚 Currently exploring **advanced RAG pipelines, LLM optimization & agentic workflows**  
+🎯 Passionate about solving real-world problems using **AI + backend engineering**  
+
+---
+
+## 🔭 Currently Working On
+- 🧠 Multimodal RAG systems (text + image understanding)  
+- ⚡ LLM response optimization & retrieval accuracy  
+- 🤖 Agentic AI workflows  
+
+---
+
+## 🌐 Socials
+- 💼 LinkedIn: https://linkedin.com/in/YOUR_LINK  
+- 🐙 GitHub: https://github.com/YOUR_USERNAME  
+- 📧 Email: yourmail@example.com  
+
+---
+
+## 🧠 Skills & Tools  
+
+### 🚀 Programming & Backend
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-FF7800?style=for-the-badge&logo=java&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+</p>
+
+### 🧬 Machine Learning / Deep Learning
+<p>
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+<img src="https://img.shields.io/badge/XGBoost-EC4E20?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+</p>
+
+### 🤖 Generative AI & LLMs
+<p>
+<img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/RAG-FF6F61?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Prompt%20Engineering-8A2BE2?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Vector%20DBs-FF1493?style=for-the-badge"/>
+</p>
+
+### 📊 Data & Visualization
+<p>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+</p>
+
+### ⚙️ Backend & DevOps
+<p>
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/REST%20APIs-005571?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+</p>
+
+### 🗂 Databases & Vector DBs
+<p>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/FAISS-FF1493?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Pinecone-00BFFF?style=for-the-badge"/>
 </p>
 
 ---
 
-<p align="center">
+## 🚀 Featured Projects  
 
-<img src="https://img.shields.io/badge/AI%2FML-Engineer-00C2FF?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Generative-AI-8A2BE2?style=for-the-badge" />
-<img src="https://img.shields.io/badge/LLMs%20%26%20RAG-FF6F61?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Computer-Vision-00FF7F?style=for-the-badge" />
+🔹 **Multimodal RAG System (Text + Image Understanding)**  
+🔗 https://github.com/YOUR_USERNAME/YOUR_REPO  
 
-</p>
+🔹 **Crowd Estimation System (Computer Vision)**  
+🔗 https://github.com/YOUR_USERNAME/YOUR_REPO  
 
-<p align="center">
-
-<img src="https://img.shields.io/badge/Python-Advanced-3776AB?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Java-SpringBoot-FF7800?style=for-the-badge" />
-<img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge" />
-<img src="https://img.shields.io/badge/LangChain-Framework-4B8BBE?style=for-the-badge" />
-<img src="https://img.shields.io/badge/VectorDB-FAISS%20%7C%20Pinecone-FF1493?style=for-the-badge" />
-
-</p>
+🔹 **Temple Management Backend System**  
+🔗 https://github.com/YOUR_USERNAME/YOUR_REPO  
 
 ---
 
-## 🚀 About Me
-- 🧠 AI/ML Engineer specializing in **Generative AI, LLMs, and RAG systems**
-- 🤖 Built **Multimodal AI systems (text + image understanding)**
-- 👁️ Developed **real-time Computer Vision solutions using YOLO & OpenCV**
-- ⚙️ Strong backend experience using **Spring Boot & FastAPI**
-- 📊 Focused on building **end-to-end production-ready AI systems**
-- 🎓 Selected for **Amazon ML Summer School**
-- 🚀 Passionate about deploying scalable AI solutions in real-world systems
+## 🏆 Achievements  
+🎓 Amazon ML Summer School  
+⚡ Production-grade AI systems (LLMs + RAG)  
+🧠 Multimodal AI & Computer Vision deployment  
 
 ---
 
-## 🧠 Core Expertise
-- Machine Learning
-- Deep Learning
-- Natural Language Processing (NLP)
-- Large Language Models (LLM)
-- Retrieval Augmented Generation (RAG)
-- Agentic AI
----
+## 📊 GitHub Stats  
 
-## 🚀 Featured Projects
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true)
 
-### 🧠 Multimodal RAG System (Text + Image Intelligence)
-- Built an advanced **RAG pipeline combining text + image embeddings**
-- Enabled contextual understanding of **documents, charts, and visuals**
-- Used **LangChain + Vector Databases + FastAPI**
-- Improved retrieval relevance for complex multimodal queries
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact)
 
 ---
 
-### 👁️ Crowd Estimation System (Computer Vision)
-- Developed real-time **crowd monitoring system using YOLO + OpenCV**
-- Used for **temple footfall estimation and crowd management**
-- Improved operational planning during peak time congestion
-- Demonstrated real-world deployment of CV models
+## ⚡ What Drives Me  
+Building **scalable AI systems combining LLMs, retrieval, and real-world deployment**.
 
 ---
 
-### 🏛️ Temple Management Backend System
-- Built scalable **REST APIs using Spring Boot**
-- Features: booking, donations, darshan & accommodation services
-- Optimized backend performance using caching strategies
-- Designed for high-concurrency real-world usage
-
----
-
-## 🏆 Achievements
-- 🎓 Selected for **Amazon ML Summer School**
-- ⚡ Built multiple **production-grade AI/ML systems**
-- 🧠 Experience in **LLMs, RAG, and Multimodal AI**
-- 👁️ Applied Computer Vision in real-world deployment systems
-
----
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight)
-
----
-
-## 🌐 Connect With Me
-- 💼 LinkedIn: www.linkedin.com/in/jaya-sree-tolety  
-- 🐙 GitHub: https://github.com/Tolety-Jayasree 
-- 📧 Email: toletyjayasree@gmail.com 
-
----
-
-## ⚡ What Drives Me
-I enjoy building **AI systems that combine intelligence, scalability, and real-world impact**, especially in **LLMs, RAG pipelines, and Computer Vision applications**.
+✨ Thank you for visiting my profile — let's build something impactful with AI! ✨
